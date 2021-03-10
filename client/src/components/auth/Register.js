@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { setAlert } from '../../actions/alert';
 import { register } from '../../actions/auth';
 import PropTypes from 'prop-types';
+import './Register.css';
 
 const Register = ({ setAlert, register, isAuthenticated }) => {
   const [formData, setFormData] = useState({
@@ -29,40 +30,48 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
 
   return (
     <Fragment>
-      <h1>Sign Up</h1>
-      <form onSubmit = {e => onSubmit(e)}>
-          <input 
-            type = "text" 
-            placeholder = "Name" 
-            name = "name" 
-            value = {name}
-            onChange = {e => onChange(e)}
-            />
-          <input 
-            type = "email" 
-            placeholder = "Email Address" 
-            name = "email"
-            value = {email}
-            onChange = {e => onChange(e)}
-            />
-        <div className="form-group">
-          <input
-            type=  "password"
-            placeholder = "Password"
-            name = "password"
-            value = {password}
-            onChange = {e => onChange(e)} 
-          />
-        </div>
-          <input
-            type = "password"
-            placeholder = "Confirm Password"
-            name = "password2"
-            value = {password2}
-            onChange = {e => onChange(e)}
-          />
-        <input type="submit" value="Register" />
-      </form>
+      <div className = "overlayR">
+        <center className = "makeCenterR">
+          <div className = "boxRegister">
+            <h1 className = "headRegister">Sign Up</h1>
+
+                <form onSubmit = {e => onSubmit(e)}>
+                    <input className="fancyInputR"
+                      type = "text" 
+                      placeholder = "Name*" 
+                      name = "name" 
+                      value = {name}
+                      onChange = {e => onChange(e)}
+                      />
+
+                    <input className="fancyInputR"
+                      type = "email" 
+                      placeholder = "Email Address*" 
+                      name = "email"
+                      value = {email}
+                      onChange = {e => onChange(e)}
+                      />
+                  
+                    <input className="fancyInputR"
+                      type=  "password"
+                      placeholder = "Password*"
+                      name = "password"
+                      value = {password}
+                      onChange = {e => onChange(e)} 
+                    />
+              
+                    <input className="fancyInputR"
+                      type = "password"
+                      placeholder = "Confirm Password*"
+                      name = "password2"
+                      value = {password2}
+                      onChange = {e => onChange(e)}
+                    />
+                    <input type="submit" value="Register" className="registerButton" />
+                </form>
+          </div>
+        </center>
+      </div>
     </Fragment>
   );
 };

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { login } from '../../actions/auth';
+import './Login.css';
 
 const Login = ({ login, isAuthenticated }) => {
   const [formData, setFormData] = useState({
@@ -23,26 +24,34 @@ const Login = ({ login, isAuthenticated }) => {
 
   return (
     <Fragment>
-      <h1>Sign In</h1>
-      <form onSubmit={(e) => onSubmit(e)}>
-        <input
-          type="email"
-          placeholder="Email Address"
-          name="email"
-          value={email}
-          onChange={(e) => onChange(e)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          name="password"
-          value={password}
-          onChange={(e) => onChange(e)}
-          minLength="6"
-        />
-        <input type="submit" value="Login" />
-      </form>
+      <div className = "overlay">
+        <center className = "makeCenter">
+          <div className = "boxLogin">
+              <h1 className = "headLogin">Log In</h1>
+
+              <form onSubmit={(e) => onSubmit(e)}>
+                <input className="fancyInput"
+                  type="email"
+                  placeholder="Email Address*"
+                  name="email"
+                  value={email}
+                  onChange={(e) => onChange(e)}
+                  required
+                />
+
+                <input className="fancyInput"
+                  type="password"
+                  placeholder="Password*"
+                  name="password"
+                  value={password}
+                  onChange={(e) => onChange(e)}
+                  minLength="6"
+                />
+                <input type="submit" value="Login" className = "loginButton"/>
+              </form>
+          </div>
+        </center>
+      </div>
     </Fragment>
   );
 };

@@ -6,8 +6,8 @@
     /* background-attachment: fixed; */
     /* position: absolute; */
     background-size: cover; /* or contain depending on what you want */
-  background-position: center center;
-  background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .makeCenter{
@@ -33,12 +33,14 @@
 
 .fancyInput{
     display: block;
-    padding: 10px;
-    padding-right: 120px;
+    padding: 50px;
+    width: 280px;
+    /* padding-right: 120px; */
     margin: 25px;
     border: solid 1px #ffae00;
     border-radius: 5px;
     background-color: #faebd713;
+    color:#fffcf6;
 }
 
 .headLogin{
@@ -60,7 +62,7 @@
 }
 
 .loginButton:hover{
-    background-color:  salmon;
+    background-color: salmon;
     border-color: salmon;
     color:aliceblue;
     cursor: pointer;

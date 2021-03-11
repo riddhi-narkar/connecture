@@ -6,8 +6,8 @@
     /* background-attachment: fixed; */
     /* position: absolute; */
     background-size: cover; /* or contain depending on what you want */
-  background-position: center center;
-  background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .makeCenterR{
@@ -34,11 +34,13 @@
 .fancyInputR{
     display: block;
     padding: 10px;
-    padding-right: 120px;
+    width: 280px;
+    /* padding-right: 120px; */
     margin: 25px;
     border: solid 1px #ffae00;
     border-radius: 5px;
     background-color: #faebd713;
+    color:#fffcf6;
 }
 
 .headRegister{

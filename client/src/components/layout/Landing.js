@@ -12,7 +12,7 @@ export const Landing = () => {
 
         <center>
           <div className = "rightSide">
-              <h1 className = "headLanding">.Connecture..</h1>
+              <h1 className = "headLanding">Connecture</h1>
 
               <h3 className = "intro">
                   A simple social platform to enhance the tech culture of your college. 

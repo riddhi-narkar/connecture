@@ -1,0 +1,85 @@
+.overlayR{
+    background-image: url('./binary.png');
+    background-repeat: repeat;
+    height: 800px; 
+    overflow: hidden;
+    /* background-attachment: fixed; */
+    /* position: absolute; */
+    background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.makeCenterR{
+    /* left = 50%;
+    right = 50%; */
+    padding-top: 100px;
+    width: 100%;
+}
+
+/* .binary{
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+
+} */
+
+.boxRegister{
+    background-color: #3b3b3bab;
+    display:inline-block;
+    border: solid 1px #121212;
+    border-radius: 30px;
+}
+
+/* .yearSelect{
+    f
+} */
+.fancyInputR{
+    display: block;
+    padding: 10px;
+    padding-right: 120px;
+    margin: 25px;
+    border: solid 1px #ffae00;
+    border-radius: 5px;
+    background-color: #faebd713;
+}
+
+.headRegister{
+    /* background-image: linear-gradient(45deg, #ff85ad, #ffb05c);
+    /* background-image: linear-gradient(45deg, #f3ec78, #af4261); 
+
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent; */
+
+    font-size: 30px;
+    color:#ffae00;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 100px;
+}
+
+.registerButton:hover{
+    background-color:  salmon;
+    border-color: salmon;
+    color:aliceblue;
+    cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.registerButton{
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    padding: 10px;
+    color:#121212;
+    background-color: #ffae00;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: solid 1px #ffae00;
+    border-radius: 20px;
+}

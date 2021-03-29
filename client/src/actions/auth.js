@@ -10,7 +10,7 @@ export const loadUser = () => async dispatch => {
     }
 
     try{
-        const res = await axios.get('/api/auth');
+        const res = await axios.get('/api/auth'); // get is backend to frontend
     
         dispatch({
             type: USER_LOADED,
@@ -34,15 +34,49 @@ export const register = ({ name, email, password }) => async dispatch => {
     const body = JSON.stringify({ name, email, password });
 
     try{
-        const res = await axios.post('/api/users', body, config);
+        const res = await axios.post('/api/users', body, config);  // post is sending frontend to backend
 
         dispatch({
-            type: REGISTER_SUCCESS,
+            type: REGISTER_SUCCESS, // reducers (returns a boolean value)
             payload: res.data
         });
 
-        dispatch(loadUser());
-    } catch(err) {
+        dispatch(loadUser());   // loads to the user page after registering
+    } 
+    catch(err) {
+        const errors = err.response.data.errors;
+
+        if(errors) {
+            errors.forEach(error => dispatch(setAlert(error.msg)))
+        }
+
+        dispatch({
+            type: REGISTER_FAIL
+        });
+    }
+}
+
+//Create Profile
+export const createProfile = ({ uName, year, bio, linkedin, github }) => async dispatch => {
+    const config = {
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }
+
+    const body = JSON.stringify({ uName, year, bio, linkedin, github });
+
+    try{
+        const res = await axios.post('/api/profile', body, config);  // post is sending frontend to backend
+
+        dispatch({
+            type: REGISTER_SUCCESS, // reducers (returns a boolean value)
+            payload: res.data
+        });
+
+        dispatch(loadUser());   // loads to the user page after registering
+    } 
+    catch(err) {
         const errors = err.response.data.errors;
 
         if(errors) {

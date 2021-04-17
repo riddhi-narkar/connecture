@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { setAlert } from './alert';
-import { REGISTER_SUCCESS, REGISTER_FAIL, USER_LOADED, AUTH_ERROR, LOGIN_SUCCESS, LOGIN_FAIL, LOGOUT } from './types';
+import { REGISTER_SUCCESS, REGISTER_FAIL, USER_LOADED, AUTH_ERROR, LOGIN_SUCCESS, LOGIN_FAIL, LOGOUT, CLEAR_PROFILE } from './types';
 import setAuthToken from '../utils/setAuthToken'
 
 // Load User
@@ -56,38 +56,38 @@ export const register = ({ name, email, password }) => async dispatch => {
     }
 }
 
-//Create Profile
-export const createProfile = ({ uName, year, bio, linkedin, github }) => async dispatch => {
-    const config = {
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    }
+// //Create Profile
+// export const createProfile = ({ uName, year, bio, linkedin, github }) => async dispatch => {
+//     const config = {
+//         headers: {
+//             'Content-Type': 'application/json'
+//         }
+//     }
 
-    const body = JSON.stringify({ uName, year, bio, linkedin, github });
+//     const body = JSON.stringify({ uName, year, bio, linkedin, github });
 
-    try{
-        const res = await axios.post('/api/profile', body, config);  // post is sending frontend to backend
+//     try{
+//         const res = await axios.post('/api/profile', body, config);  // post is sending frontend to backend
 
-        dispatch({
-            type: REGISTER_SUCCESS, // reducers (returns a boolean value)
-            payload: res.data
-        });
+//         dispatch({
+//             type: REGISTER_SUCCESS, // reducers (returns a boolean value)
+//             payload: res.data
+//         });
 
-        dispatch(loadUser());   // loads to the user page after registering
-    } 
-    catch(err) {
-        const errors = err.response.data.errors;
+//         dispatch(loadUser());   // loads to the user page after registering
+//     } 
+//     catch(err) {
+//         const errors = err.response.data.errors;
 
-        if(errors) {
-            errors.forEach(error => dispatch(setAlert(error.msg)))
-        }
+//         if(errors) {
+//             errors.forEach(error => dispatch(setAlert(error.msg)))
+//         }
 
-        dispatch({
-            type: REGISTER_FAIL
-        });
-    }
-}
+//         dispatch({
+//             type: REGISTER_FAIL
+//         });
+//     }
+// }
 
 // Login User
 export const login = ( email, password ) => async dispatch => {
@@ -123,5 +123,6 @@ export const login = ( email, password ) => async dispatch => {
 
 // Logout
 export const logout = () => dispatch => {
+    dispatch({ type: CLEAR_PROFILE});
     dispatch({ type: LOGOUT});
 }

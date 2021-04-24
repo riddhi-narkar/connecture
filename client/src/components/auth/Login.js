@@ -30,27 +30,28 @@ const Login = ({ login, isAuthenticated }) => {
       <div className = "overlay">
         <center className = "makeCenter">
           <div className = "boxLogin">
-              <h1 className = "headLogin">Log In</h1>
+              <h1 className = "welcome">Welcome back !</h1>
+              <h1 className = "headLogin">Login to your account</h1>
 
               <form onSubmit={(e) => onSubmit(e)}>
-                <input className="fancyInput"
-                  type="email"
-                  placeholder="Email Address*"
-                  name="email"
-                  value={email}
-                  onChange={(e) => onChange(e)}
+                <input className = "fancyInput"
+                  type = "email"
+                  placeholder = "Email Address*"
+                  name = "email"
+                  value = {email}
+                  onChange = {(e) => onChange(e)}
                   required
                 />
 
-                <input className="fancyInput"
-                  type="password"
-                  placeholder="Password*"
-                  name="password"
-                  value={password}
-                  onChange={(e) => onChange(e)}
-                  minLength="6"
+                <input className = "fancyInput"
+                  type = "password"
+                  placeholder = "Password*"
+                  name = "password"
+                  value = {password}
+                  onChange = {(e) => onChange(e)}
+                  minLength = "6"
                 />
-                <input type="submit" value="LOGIN" className = "loginButton"/>
+                <input type = "submit" value = "Login" className = "loginButton"/>
               </form>
           </div>
         </center>

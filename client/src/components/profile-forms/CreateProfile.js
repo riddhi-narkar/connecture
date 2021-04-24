@@ -6,35 +6,35 @@ import { createProfile } from '../../actions/profile';
 
 const CreateProfile = ({ createProfile, history }) => {
   const [formData, setFormData] = useState({
-    company: '',
+    // company: '',
     website: '',
-    location: '',
+    // location: '',
     status: '',
     skills: '',
     githubusername: '',
     bio: '',
     twitter: '',
-    facebook: '',
+    // facebook: '',
     linkedin: '',
-    youtube: '',
-    instagram: '',
+    // youtube: '',
+    // instagram: '',
   }); // created a state
 
   const [displaySocialInputs, toggleSocialInputs] = useState(false);
 
   const {
-    company,
+    // company,
     website,
-    location,
+    // location,
     status,
     skills,
     githubusername,
     bio,
     twitter,
-    facebook,
+    // facebook,
     linkedin,
-    youtube,
-    instagram,
+    // youtube,
+    // instagram,
   } = formData;
 
   const onChange = (e) =>
@@ -48,28 +48,28 @@ const CreateProfile = ({ createProfile, history }) => {
   return (
     <Fragment>
       <h1>Create Your Profile</h1>
-      <p>
+      {/* <p>
         Let's get some information to make your profile stand out
-      </p>
+      </p> */}
       <small>* = required field</small>
       <form onSubmit={e => onSubmit(e)}>
         <div>
           <select name="status" value={status} onChange={(e) => onChange(e)}>
-            <option value="0">* Select Professional Status</option>
-            <option value="Developer">Developer</option>
-            <option value="Junior Developer">Junior Developer</option>
-            <option value="Senior Developer">Senior Developer</option>
-            <option value="Manager">Manager</option>
-            <option value="Student or Learning">Student or Learning</option>
-            <option value="Instructor">Instructor or Teacher</option>
+            <option value="0">* Select</option>
+            {/* <option value="Developer">Developer</option> */}
+            {/* <option value="Junior Developer">Junior Developer</option> */}
+            {/* <option value="Senior Developer">Senior Developer</option> */}
+            {/* <option value="Manager">Manager</option> */}
+            <option value="Student">Student</option>
+            {/* <option value="Instructor">Instructor or Teacher</option> */}
             <option value="Intern">Intern</option>
-            <option value="Other">Other</option>
+            {/* <option value="Other">Other</option> */}
           </select>
-          <small>
+          {/* <small>
             Give us an idea of where you are at in your career
-          </small>
+          </small> */}
         </div>
-        <div>
+        {/* <div>
           <input
             type="text"
             placeholder="Company"
@@ -80,7 +80,7 @@ const CreateProfile = ({ createProfile, history }) => {
           <small>
             Could be your own company or one you work for
           </small>
-        </div>
+        </div> */}
         <div>
           <input
             type="text"
@@ -93,7 +93,7 @@ const CreateProfile = ({ createProfile, history }) => {
             Could be your own or a company website
           </small>
         </div>
-        <div>
+        {/* <div>
           <input
             type="text"
             placeholder="Location"
@@ -104,17 +104,17 @@ const CreateProfile = ({ createProfile, history }) => {
           <small>
             City & state suggested (eg. Boston, MA)
           </small>
-        </div>
+        </div> */}
         <div>
           <input
             type="text"
-            placeholder="* Skills"
+            placeholder="* Technical Skills"
             name="skills"
             value={skills}
             onChange={(e) => onChange(e)}
           />
           <small>
-            Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)
+            Please use comma between two separate skills
           </small>
         </div>
         <div>
@@ -125,10 +125,10 @@ const CreateProfile = ({ createProfile, history }) => {
             value={githubusername}
             onChange={(e) => onChange(e)}
           />
-          <small>
+          {/* <small>
             If you want your latest repos and a Github link, include your
             username
-          </small>
+          </small> */}
         </div>
         <div>
           <textarea
@@ -137,7 +137,7 @@ const CreateProfile = ({ createProfile, history }) => {
             value={bio}
             onChange={(e) => onChange(e)}
           ></textarea>
-          <small>Tell us a little about yourself</small>
+          {/* <small>Tell us a little about yourself</small> */}
         </div>
 
         <div>
@@ -162,7 +162,7 @@ const CreateProfile = ({ createProfile, history }) => {
               />
             </div>
 
-            <div>
+            {/* <div>
               <input
                 type="text"
                 placeholder="Facebook URL"
@@ -180,7 +180,7 @@ const CreateProfile = ({ createProfile, history }) => {
                 value={youtube}
                 onChange={(e) => onChange(e)}
               />
-            </div>
+            </div> */}
 
             <div>
               <input
@@ -192,7 +192,7 @@ const CreateProfile = ({ createProfile, history }) => {
               />
             </div>
 
-            <div>
+            {/* <div>
               <input
                 type="text"
                 placeholder="Instagram URL"
@@ -200,7 +200,7 @@ const CreateProfile = ({ createProfile, history }) => {
                 value={instagram}
                 onChange={(e) => onChange(e)}
               />
-            </div>
+            </div> */}
           </Fragment>
         )}
 

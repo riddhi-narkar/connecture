@@ -1,0 +1,12 @@
+.navigation{
+
+    /* height: 100px; */
+    background-image: linear-gradient(45 deg, #71a3f7, #ccdcfd);
+    color: #71a3f7;
+}
+
+.title{
+    padding-left: 30px;
+    color: #121212;
+    font-family: 'Roboto', 'sans-serif';
+}

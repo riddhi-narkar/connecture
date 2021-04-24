@@ -27,11 +27,12 @@ body{
     /* transform: translate(-50%, -50%); */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 .headLanding{
     /* background-color: red; */
   
-    background-image: linear-gradient(45deg, #ff85ad, #ffb05c);
+    /* background-image: linear-gradient(45deg, #ff85ad, #ffb05c); */
+    background-image: linear-gradient(45deg, 
+    #71a3f7, #e1cdfe);
     /* background-image: linear-gradient(45deg, #f3ec78, #af4261); */
 
     background-size: 100%;
@@ -49,19 +50,18 @@ body{
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Open+Sans:wght@300&display=swap');
 .intro{
     padding: 20px;
     padding-bottom: 100px;
-    font-family: 'Noto Sans JP', sans-serif;
-    color:antiquewhite;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: aliceblue;
     /* color: #721bdd; */
 }
 
 .link{
     font-size: 18px;
-    font-family: 'Noto Sans JP', sans-serif;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 .link1:hover, .link2:hover{
@@ -75,7 +75,7 @@ body{
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent; */
-    background-color: #ff9e22; 
+    background-color: #71a3f7; 
     color:#121212;
 }
 
@@ -83,7 +83,7 @@ body{
     display: block;
     padding: 15px 50px;
     color:beige;
-    border: solid 1px #ff9e22;
+    border: solid 1px #71a3f7;
     border-radius: 10px;
     text-decoration: none;
     margin-bottom: 25px;
@@ -94,7 +94,7 @@ body{
     display: block;
     padding: 15px 50px;
     color:beige;
-    border: solid 1px #ff9e22;
+    border: solid 1px #71a3f7;
     border-radius: 10px;
     text-decoration: none;
     width: 25%;

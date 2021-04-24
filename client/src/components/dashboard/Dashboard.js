@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Spinner from '../layout/Spinner';
 import { getCurrentProfile } from '../../actions/profile';
+import './Dashboard.css';
 
 const Dashboard = ({
   getCurrentProfile,
@@ -18,16 +19,25 @@ const Dashboard = ({
     <Spinner />
   ) : (
     <Fragment>
-      <h1> Dashboard</h1>
-      <p> Welcome {user && user.name}</p>
-      {profile !== null ? (
-        <Fragment>has</Fragment>
-      ) : (
-        <Fragment>
-            <p> Please Setup your Profile</p>
-            <Link to='/create-profile'> Create Profile</Link>
-        </Fragment>
-      )}
+      <div className = 'flex-container'>
+        {/* <h1 className = "headDashboard">Connecture</h1> */}
+        <p className = "welcomeDashboard"> Hello {user && user.name} !</p>
+
+        {profile !== null ? (
+          <Fragment>has</Fragment>
+        ) : (
+          <Fragment>
+              <p className = "welcomeDashboard"> You've almost made it !  Quickly setup your profile and start using <span className = 'spanStyle'>Connecture</span> !</p>
+              <Link to='/create-profile'>
+                <div className = 'buttonDiv'>
+                  
+                    Create my Connecture Profile
+                  
+                </div>
+              </Link>
+          </Fragment>
+        )}
+      </div>
     </Fragment>
   );
 };

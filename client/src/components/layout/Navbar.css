@@ -1,0 +1,42 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #71a3f7;
+  position: fixed;
+  z-index: 1;  
+  width: 100%;
+  top: 0;
+  opacity: 0.9;
+  font-family: 'Roboto, sans-serif';
+
+}
+
+.navbar ul {
+  font-family: 'Roboto, sans-serif';
+  display: flex;
+  list-style: none;
+}
+
+.navbar a:hover {
+  font-family: 'Roboto, sans-serif';
+
+  color: #ffff;
+}
+
+.navbar a{
+  size: 100px;
+  font-family: 'Roboto, sans-serif';
+  color: #121212;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+  text-decoration: none;
+  padding-right: 1.35rem;
+}
+
+.h1
+{
+  font-family: 'Roboto, sans-serif';
+  text-decoration: #121212;
+}

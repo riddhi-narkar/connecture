@@ -1,0 +1,11 @@
+.outer
+{
+    display: flexbox;
+    align-content: center; 
+    color: #f0f8ff;
+}
+
+.message
+{
+    color:aliceblue;
+}

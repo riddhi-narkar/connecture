@@ -26,7 +26,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
                 <ProfileItem key={profile._id} profile={profile} />
               ))
             ) : (
-              <h4>Your peer doesn't have a COnnecture profile yet. Invite him/her here!</h4>
+              <h4>Your peer doesn't have a Connecture profile yet. Invite them here!</h4>
             )}
           </div>
         </Fragment>

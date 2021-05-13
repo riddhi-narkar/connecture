@@ -11,10 +11,10 @@ const Landing = ({ isAuthenticated }) => {
   }
 
   return (
-    <div className = "body">
+    <div className = "landingg">
 
         <div className = "leftSide">
-          <img src = {photo1}/>
+          <img src = {photo1} alt="hero"/>
         </div>
 
         <center>
@@ -26,8 +26,8 @@ const Landing = ({ isAuthenticated }) => {
                   Build new connections, meet up, and grow with Connecture!
               </h3>
                 
-              <div className = "link">
-                  <Link to="/register" className = "link1">SIGN UP</Link>
+              <div className = "linkdiv">
+              <Link to="/register" className = "link1">SIGN UP</Link>
                   <Link to="/login" className = "link2">LOGIN</Link>
               </div>
           </div>

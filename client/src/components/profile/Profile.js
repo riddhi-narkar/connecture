@@ -1,11 +1,11 @@
 import React, { Fragment, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { connect } from 'react-redux';
 import Spinner from '../layout/Spinner';
 import ProfileTop from './ProfileTop';
 import ProfileAbout from './ProfileAbout';
-// import ProfileEducation from './ProfileEducation';
+import ProfileEducation from './ProfileEducation';
 import { getProfileById } from '../../actions/profile';
 
 const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
@@ -14,12 +14,12 @@ const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
   }, [getProfileById, match.params.id]);
 
   return (
-    <Fragment>
+    <Fragment className="margins">
       {profile === null ? (
         <Spinner />
       ) : (
         <Fragment>
-          <Link to="/profiles" className="btn btn-light">
+          <Link to="/profiles" className="btn btn-dark">
             Back To Profiles
           </Link>
           {auth.isAuthenticated &&
@@ -34,9 +34,9 @@ const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
             <ProfileAbout profile={profile} />
             
 
-            {/* <div className="profile-edu bg-white p-2">
+            <div className="profile-edu bg-white p-2">
               <h2 className="text-primary">Education</h2>
-              {profile.education.length > 0 ? (
+              {profile.education ? (
                 <Fragment>
                   {profile.education.map((education) => (
                     <ProfileEducation
@@ -48,7 +48,9 @@ const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
               ) : (
                 <h4>No education credentials</h4>
               )}
-            </div> */}
+            </div>
+
+            
 
             
           </div>

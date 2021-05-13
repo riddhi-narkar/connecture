@@ -213,7 +213,6 @@ router.put(
   '/education',
   auth,
   check('school', 'School is required').notEmpty(),
-  check('degree', 'Degree is required').notEmpty(),
   check('stream', 'stream of study is required').notEmpty(),
   check('from', 'From date is required and needs to be from the past')
     .notEmpty()

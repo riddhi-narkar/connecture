@@ -1,5 +1,5 @@
 {
-    "mongoURI": "mongodb+srv://devansh: Devansh@1234@apsitconnect.9jpei.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "mongoURI": "mongodb+srv://devansh:Devansh@1234@apsitconnect.9jpei.mongodb.net/<dbname>?retryWrites=true&w=majority",
     "jwtSecret": "mysecrettoken",
     "githubClientId": "8e5b381d69d41278d252",
     "githubSecret": " aeb4fdd66b5046f9845d15ccc83dbc301e651f99"

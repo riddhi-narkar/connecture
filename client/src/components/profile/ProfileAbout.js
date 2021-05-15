@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const ProfileAbout = ({
   profile: {
-    linkedin,
+    githubusername,
     bio,
     skills,
     user: { name }
@@ -17,10 +17,10 @@ const ProfileAbout = ({
         <div className='line' />
       </Fragment>
     )}
-    {linkedin && (
+    {githubusername && (
       <Fragment>
-        <h2 className='text-primary'>{name.trim().split(' ')[0]}'s LinkedIn</h2>
-        <p>{linkedin}</p>
+        <h2 className='text-primary'>{name.trim().split(' ')[0]}'s GitHub</h2>
+        <p>{githubusername}</p>
         <div className='line' />
       </Fragment>
     )}

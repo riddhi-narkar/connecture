@@ -149,11 +149,6 @@ const ProfileForm = ({
           />
           <small className="form-text">Tell us a little about yourself</small>
         </div>
-
-        
-
-     
-
         <input type="submit" className="btn btn-primary my-1" />
         <Link className="btn btn-light my-1" to="/dashboard">
           Go Back

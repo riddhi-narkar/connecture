@@ -9,25 +9,25 @@ The technology stack used in this project is the MERN stack, which has some depe
 **Steps:**
 1. Download the latest version of Node.js corresponding to your OS.
 2. Go to the root folder of the project and run the following commands in your terminal:
-' ' '~ npm install' ' '
+` ` `~ npm install` ` `
 
 This will install node modules in your root folder.
-' ' '~ cd client
-~ npm install' ' '
+` ` `~ cd client
+~ npm install` ` `
 This will install node modules in your client folder.
 
 3) To run frontend/client side, run the command
-' ' '~ npm run client' ' '
+` ` `~ npm run client` ` `
 
 4) To run server and backend, run the command
-' ' '~ npm run server' ' '
+` ` `~ npm run server` ` `
  
 5) To run both, run the command
-' ' '~ npm run dev' ' '
+` ` `~ npm run dev` ` `
 
 If you have installed node modules correctly, and have run these commands successfully, then React will run this website on your local server.
 For any other guidance or support, check out these official websites of the libraries and other software we used to develop Connecture.
-1. [NPM] (https://www.npmjs.com/)
-2. [Node.js] (https://nodejs.org/en/)
-3. [React.js] (https://reactjs.org/)
-5. [Express.js] (https://expressjs.com/)
+1. [NPM](https://www.npmjs.com/)
+2. [Node.js](https://nodejs.org/en/)
+3. [React.js](https://reactjs.org/)
+5. [Express.js](https://expressjs.com/)

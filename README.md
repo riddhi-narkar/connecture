@@ -1,4 +1,4 @@
-# Connecture :octocat:
+# Connecture:octocat:
 
 *This project is based on the concept of making new and meaningful connections. By providing access to all college peers on a single platform, getting to know peers with a similar interest can help to guide and inspire students. We already have many sophisticated social platforms to connect with people, but, a setup at an institute-level would significantly help to bind everyone by leveraging the ability to connect digitally.*
 
@@ -6,8 +6,10 @@
 
 The technology stack used in this project is the MERN stack, which has some dependencies. To run this code, your system would need node modules, and here’s how you can install them and run this project.
 
-###**Steps:**   :octopus:
+### Steps::octopus:
 1. Download the latest version of Node.js corresponding to your OS.
+
+
 2. Go to the root folder of the project and run the following commands in your terminal:
 
 ` ` `~ npm install` ` `
@@ -19,15 +21,15 @@ This will install node modules in your root folder.
 
 This will install node modules in your client folder.
 
-3) To run frontend/client side, run the command
+3. To run frontend/client side, run the command
 
 ` ` `~ npm run client` ` `
 
-4) To run server and backend, run the command
+4. To run server and backend, run the command
 
 ` ` `~ npm run server` ` `
  
-5) To run both, run the command
+5. To run both, run the command
 
 ` ` `~ npm run dev` ` `
 

@@ -41,7 +41,7 @@ const AddEducation = ({ addEducation, history }) => {
         <div className="form-group">
           <input
             type="text"
-            placeholder="* School Name"
+            placeholder="* Educational Institute's Name"
             name="school"
             value={school}
             onChange={onChange}

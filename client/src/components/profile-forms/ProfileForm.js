@@ -11,10 +11,8 @@ const initialState = {
   githubusername: '',
   bio: '',
   twitter: '',
-  facebook: '',
   linkedin: '',
   youtube: '',
-  instagram: ''
 };
 
 const ProfileForm = ({
@@ -48,6 +46,8 @@ const ProfileForm = ({
     location,
     status,
     skills,
+    linkedin,
+    twitter,
     githubusername,
     bio,
   } = formData;
@@ -101,6 +101,30 @@ const ProfileForm = ({
           />
           <small className="form-text">
             Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)
+          </small>
+        </div>
+        <div className="form-group">
+          <input
+            type="text"
+            placeholder="LinkedIn profile link"
+            name="linkedin"
+            value={linkedin}
+            onChange={onChange}
+          />
+          <small className="form-text">
+            Please provide your LinkedIn profile link so that peers can connect!
+          </small>
+        </div>
+        <div className="form-group">
+          <input
+            type="text"
+            placeholder="Twitter profile link"
+            name="twitter"
+            value={twitter}
+            onChange={onChange}
+          />
+          <small className="form-text">
+            Please provide your Twitter profile link so that peers can connect!
           </small>
         </div>
         <div className="form-group">

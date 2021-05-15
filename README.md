@@ -6,7 +6,7 @@
 
 The technology stack used in this project is the MERN stack, which has some dependencies. To run this code, your system would need node modules, and here’s how you can install them and run this project.
 
-**Steps:**  :octopus:
+###**Steps:**   :octopus:
 1. Download the latest version of Node.js corresponding to your OS.
 2. Go to the root folder of the project and run the following commands in your terminal:
 
@@ -32,6 +32,7 @@ This will install node modules in your client folder.
 ` ` `~ npm run dev` ` `
 
 If you have installed node modules correctly, and have run these commands successfully, then React will run this website on your local server. :dart:
+
 For any other guidance or support, check out these official websites of the libraries and other software we used to develop Connecture. :bookmark_tabs:
 1. [NPM](https://www.npmjs.com/)
 2. [Node.js](https://nodejs.org/en/)

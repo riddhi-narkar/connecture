@@ -17,6 +17,7 @@ The technology stack used in this project is the MERN stack, which has some depe
 This will install node modules in your root folder.
 
 ` ` `~ cd client` ` `
+
 ` ` `~ npm install` ` `
 
 This will install node modules in your client folder.

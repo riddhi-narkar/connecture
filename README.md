@@ -6,7 +6,7 @@
 
 The technology stack used in this project is the MERN stack, which has some dependencies. To run this code, your system would need node modules, and here’s how you can install them and run this project.
 
-### Steps::octopus:
+### Steps: :octopus:
 1. Download the latest version of Node.js corresponding to your OS.
 
 
@@ -17,6 +17,7 @@ The technology stack used in this project is the MERN stack, which has some depe
 This will install node modules in your root folder.
 
 ` ` `~ cd client` ` `
+
 ` ` `~ npm install` ` `
 
 This will install node modules in your client folder.
@@ -40,3 +41,4 @@ For any other guidance or support, check out these official websites of the libr
 2. [Node.js](https://nodejs.org/en/)
 3. [React.js](https://reactjs.org/)
 5. [Express.js](https://expressjs.com/)
+6. [MongoDB](https://docs.mongodb.com)

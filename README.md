@@ -6,7 +6,7 @@
 
 The technology stack used in this project is the MERN stack, which has some dependencies. To run this code, your system would need node modules, and here’s how you can install them and run this project.
 
-### Steps::octopus:
+### Steps: :octopus:
 1. Download the latest version of Node.js corresponding to your OS.
 
 

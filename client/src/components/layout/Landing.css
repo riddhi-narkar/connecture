@@ -6,7 +6,7 @@
   background-image: linear-gradient(45deg, #71a3f7, #e1cdfe);
   font-family: 'Kanit', sans-serif;
   margin-top: 60px;
-  height: 702px;
+  height: 760px;
 }
 
 .leftSide {
@@ -34,14 +34,13 @@
 }
 
 .headLanding {
-  /* background-color: red; */
 
   /* background-image: linear-gradient(45deg, #ff85ad, #ffb05c); */
   /* background-image: linear-gradient(45deg, #71a3f7, #e1cdfe); */
   /* background-image: linear-gradient(45deg, #f3ec78, #af4261); */
 
   background-size: 100%;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
 
   font-size: 100px;
   font-family: 'Cantarell', sans-serif;
@@ -69,7 +68,7 @@
 }
 
 .link1 {
-  display: block;
+  display: block; 
   padding: 15px 50px;
   background-color: #333333;
   border: solid 1px #71a3f7;
@@ -92,9 +91,9 @@
 }
 
 .link1:hover {
-  background-color: white;
+  background-color: aliceblue;
 }
 
 .link2:hover {
-  background-color: white;
+  background-color: aliceblue;
 }

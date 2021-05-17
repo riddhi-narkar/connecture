@@ -12,7 +12,6 @@ const initialState = {
   bio: '',
   twitter: '',
   linkedin: '',
-  youtube: '',
 };
 
 const ProfileForm = ({

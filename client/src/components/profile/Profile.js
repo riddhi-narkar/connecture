@@ -48,11 +48,7 @@ const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
               ) : (
                 <h4>No education credentials</h4>
               )}
-            </div>
-
-            
-
-            
+            </div> 
           </div>
         </Fragment>
       )}

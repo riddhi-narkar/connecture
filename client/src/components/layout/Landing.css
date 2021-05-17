@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital@1&display=swap');
 
 .landingg {
   overflow: hidden;
@@ -43,7 +44,7 @@
   background-repeat: repeat;
 
   font-size: 100px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cantarell', sans-serif;
   line-height: 1.2;
   margin-bottom: 1rem;
 }

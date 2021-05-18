@@ -22,8 +22,6 @@ const ProfileForm = ({
 }) => {
   const [formData, setFormData] = useState(initialState);
 
-
-
   useEffect(() => {
     if (!profile) getCurrentProfile();
     if (!loading && profile) {
@@ -41,7 +39,6 @@ const ProfileForm = ({
   }, [loading, getCurrentProfile, profile]);
 
   const {
-
     location,
     status,
     skills,

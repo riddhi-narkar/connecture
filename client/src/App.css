@@ -83,10 +83,6 @@ img
   margin-bottom: 1rem;
 }
 
-/* .text-center {
-  text-align: center;
-} */
-
 .text-primary 
 {
   color: var(--primary-color);
@@ -113,39 +109,6 @@ img
   padding: 2rem;
 }
 
-/* .p-3 {
-  padding: 3rem;
-} */
-/* .py {
-  padding: 0.5rem 0;
-}
-.py-1 {
-  padding: 1rem 0;
-}
-.py-2 {
-  padding: 2rem 0;
-}
-.py-3 {
-  padding: 3rem 0;
-} */
-
-/* Margin */
-/* .m {
-  margin: 0.5rem;
-}
-.m-1 {
-  margin: 1rem;
-}
-.m-2 {
-  margin: 2rem;
-}
-.m-3 {
-  margin: 3rem;
-}
-.my {
-  margin: 0.5rem 0;
-} */
-
 .my-1 
 {
   margin: 1rem 0;
@@ -155,10 +118,6 @@ img
 {
   margin: 2rem 0;
 }
-
-/* .my-3 {
-  margin: 3rem 0;
-} */
 
 .btn
 {
@@ -173,15 +132,6 @@ img
   transition: opacity 0.2s ease-in;
   outline: none;
 }
-
-/* .badge {
-  font-size: 0.8rem;
-  padding: 0.1rem;
-  text-align: center;
-  margin: 0.3rem;
-  background: var(--light-color);
-  color: #333;
-} */
 
 .alert 
 {
@@ -262,16 +212,6 @@ img
   background: #ccc;
   margin: 1.5rem 0;
 }
-
-/* Overlay */
-/* .dark-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
 
 /* Forms */
 .form .form-group 
@@ -376,24 +316,6 @@ button
   margin-right: 0.6rem;
 }
 
-/* Landing Page */
-/* .landing {
-  position: relative;
-  height: 100vh;
-}
-
-.landing-inner {
-  color: #fff;
-  height: 100%;
-  width: 80%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-} */
-
 /* Profiles Page */
 .profile 
 {
@@ -457,22 +379,16 @@ button
   text-align: center;
 }
 
-/* .profile-exp {
-  grid-area: exp;
-} */
-
 .profile-edu 
 {
   grid-area: edu;
 }
 
-/* .profile-exp h2, */
 .profile-edu h2 
 {
   margin-bottom: 1rem;
 }
 
-/* .profile-exp > div, */
 .profile-edu > div 
 {
   margin-bottom: 1rem;
@@ -480,13 +396,11 @@ button
   border-bottom: #ccc 1px dotted;
 }
 
-/* .profile-exp > div:last-child, */
 .profile-edu > div:last-child 
 {
   border: 0;
 }
 
-/* .profile-exp p, */
 .profile-edu p 
 {
   margin: 0.5rem 0;
@@ -496,21 +410,6 @@ button
 {
   grid-area: github;
 }
-
-/* .profile-github .repo {
-  display: flex;
-} */
-
-/* .profile-github .repo > div:first-child {
-  flex: 7;
-  flex-basis: 70%;
-}
-
-.profile-github > div:last-child {
-  flex: 3;
-  flex-basis: 20%;
-} */
-
 
 /* Responsive Styles */
 @media (max-width: 700px) 

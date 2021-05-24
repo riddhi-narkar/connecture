@@ -28,71 +28,71 @@ const AddEducation = ({ addEducation, history }) => {
 
   return (
     <Fragment>
-      <h1 className="large text-primary">Add Your Education</h1>
+      <h1 className = "large text-primary">Add Your Education</h1>
     
       <small>* = required field</small>
       <form
-        className="form"
-        onSubmit={e => {
+        className = "form"
+        onSubmit = {e => {
           e.preventDefault();
           addEducation(formData, history);
         }}
       >
-        <div className="form-group">
+        <div className = "form-group">
           <input
-            type="text"
-            placeholder="* Educational Institute's Name"
-            name="school"
-            value={school}
-            onChange={onChange}
+            type = "text"
+            placeholder = "* Educational Institute's Name"
+            name = "school"
+            value = {school}
+            onChange = {onChange}
             required
           />
         </div>
-        <div className="form-group">
+        <div className = "form-group">
           <input
-            type="text"
-            placeholder="* Stream"
-            name="stream"
-            value={stream}
-            onChange={onChange}
+            type = "text"
+            placeholder = "* Stream"
+            name = "stream"
+            value = {stream}
+            onChange = {onChange}
             required
           />
         </div>
        
-        <div className="form-group">
+        <div className = "form-group">
           <h4>From Date</h4>
-          <input type="date" name="from" value={from} onChange={onChange} />
+          <input type = "date" name = "from" value = {from} onChange = {onChange} />
         </div>
-        <div className="form-group">
+        <div className = "form-group">
           <p>
             <input
-              type="checkbox"
-              name="current"
-              checked={current}
-              value={current}
-              onChange={() => setFormData({ ...formData, current: !current })}
+              type = "checkbox"
+              name = "current"
+              checked = {current}
+              value = {current}
+              onChange = {() => setFormData({ ...formData, current: !current })}
             />{' '}
             Current School
           </p>
         </div>
-        <div className="form-group">
+        <div className = "form-group">
           <h4>To Date</h4>
           <input
-            type="date"
-            name="to"
-            value={to}
-            onChange={onChange}
-            disabled={current}
+            type = "date"
+            name = "to"
+            value = {to}
+            onChange = {onChange}
+            disabled = {current}
           />
         </div>
-        <div className="form-group">
+        <div className = "form-group">
           <textarea
-            name="description"
-            cols="30"
-            rows="3"
-            placeholder="Program Description"
-            value={description}
-            onChange={onChange}
+            name = "description"
+            cols = "30"
+            rows = "3"
+            placeholder = "Program Description"
+            value = {description}
+            onChange = {onChange}
           />
         </div>
         <input type="submit" className="btn btn-primary my-1" />

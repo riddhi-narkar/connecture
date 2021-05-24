@@ -58,95 +58,95 @@ const ProfileForm = ({
 
   return (
     <Fragment>
-      <h1 className="large text-primary">Edit Your Profile</h1>
-      <p className="lead">
-        <i className="fas fa-user" /> Add some changes to your profile
+      <h1 className = "large text-primary">Edit Your Profile</h1>
+      <p className = "lead">
+        <i className = "fas fa-user" /> Add some changes to your profile
       </p>
       <small>* = required field</small>
-      <form className="form" onSubmit={onSubmit}>
-        <div className="form-group">
-          <select name="status" value={status} onChange={onChange}>
+      <form className = "form" onSubmit = {onSubmit}>
+        <div className = "form-group">
+          <select name = "status" value = {status} onChange = {onChange}>
             <option>* Select Education Status</option>
-            <option value="First Year">First Year</option>
-            <option value="Second Year">Second Year</option>
-            <option value="Third Year">Third Year</option>
-            <option value="Fourth Year">Fourth Year</option>
-            <option value="Alumni">Alumni</option>
+            <option value = "First Year">First Year</option>
+            <option value = "Second Year">Second Year</option>
+            <option value = "Third Year">Third Year</option>
+            <option value = "Fourth Year">Fourth Year</option>
+            <option value = "Alumni">Alumni</option>
           </select>
         </div>
         
-        <div className="form-group">
+        <div className = "form-group">
           <input
-            type="text"
-            placeholder="Location"
-            name="location"
-            value={location}
-            onChange={onChange}
+            type = "text"
+            placeholder = "Location"
+            name = "location"
+            value = {location}
+            onChange = {onChange}
           />
-          <small className="form-text">
+          <small className = "form-text">
             Your City
           </small>
         </div>
-        <div className="form-group">
+        <div className = "form-group">
           <input
-            type="text"
-            placeholder="* Skills"
-            name="skills"
-            value={skills}
-            onChange={onChange}
+            type = "text"
+            placeholder = "* Skills"
+            name = "skills"
+            value = {skills}
+            onChange = {onChange}
           />
-          <small className="form-text">
+          <small className = "form-text">
             Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)
           </small>
         </div>
-        <div className="form-group">
+        <div className = "form-group">
           <input
-            type="text"
-            placeholder="LinkedIn profile link"
-            name="linkedin"
-            value={linkedin}
-            onChange={onChange}
+            type = "text"
+            placeholder = "LinkedIn profile link"
+            name = "linkedin"
+            value = {linkedin}
+            onChange = {onChange}
           />
-          <small className="form-text">
+          <small className = "form-text">
             Please provide your LinkedIn profile link so that peers can connect!
           </small>
         </div>
-        <div className="form-group">
+        <div className = "form-group">
           <input
-            type="text"
-            placeholder="Twitter profile link"
-            name="twitter"
-            value={twitter}
-            onChange={onChange}
+            type = "text"
+            placeholder = "Twitter profile link"
+            name = "twitter"
+            value = {twitter}
+            onChange = {onChange}
           />
-          <small className="form-text">
+          <small className = "form-text">
             Please provide your Twitter profile link so that peers can connect!
           </small>
         </div>
-        <div className="form-group">
+        <div className = "form-group">
           <input
-            type="text"
-            placeholder="Github Username"
-            name="githubusername"
-            value={githubusername}
-            onChange={onChange}
+            type = "text"
+            placeholder = "Github Username"
+            name = "githubusername"
+            value = {githubusername}
+            onChange = {onChange}
           />
-          <small className="form-text">
+          <small className = "form-text">
             If you want your latest repos and a Github link, include your
             username
           </small>
         </div>
-        <div className="form-group">
+        <div className = "form-group">
           <textarea
-            placeholder="A short bio of yourself"
-            name="bio"
-            value={bio}
-            onChange={onChange}
+            placeholder = "A short bio of yourself"
+            name = "bio"
+            value = {bio}
+            onChange = {onChange}
           />
-          <small className="form-text">Tell us a little about yourself</small>
+          <small className = "form-text">Tell us a little about yourself</small>
         </div>
-        <input type="submit" className="btn btn-primary my-1" />
-        <Link className="btn btn-light my-1" to="/dashboard">
+        <input type = "submit" className = "btn btn-primary my-1" />
+        <Link className = "btn btn-light my-1" to = "/dashboard">
           Go Back
         </Link>
       </form>

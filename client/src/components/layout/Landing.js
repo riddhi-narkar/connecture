@@ -7,7 +7,7 @@ import './Landing.css';
 
 const Landing = ({ isAuthenticated }) => {
   if (isAuthenticated) {
-    return <Redirect to='/dashboard' />;
+    return <Redirect to = '/dashboard' />;
   }
 
   return (
@@ -27,8 +27,8 @@ const Landing = ({ isAuthenticated }) => {
               </h3>
                 
               <div className = "linkdiv">
-              <Link to="/register" className = "link1">SIGN UP</Link>
-                  <Link to="/login" className = "link2">LOGIN</Link>
+              <Link to = "/register" className = "link1">SIGN UP</Link>
+                  <Link to = "/login" className = "link2">LOGIN</Link>
               </div>
           </div>
         </center>

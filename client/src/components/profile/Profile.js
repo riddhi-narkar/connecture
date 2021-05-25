@@ -53,9 +53,7 @@ const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
                 </Fragment>
                 
               ) : (
-
                 <h4>No education credentials</h4>
-
               )}
             </div> 
           </div>

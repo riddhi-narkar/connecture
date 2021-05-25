@@ -41,7 +41,6 @@ function profileReducer(state = initialState, action) {
       return {
         ...state,
         profile: null,
-        repos: []
       };
     default:
       return state;

@@ -1,0 +1,101 @@
+
+body{
+    background-color: #121212;
+    overflow: hidden;
+}
+
+.leftSide{
+    float: left;
+    width: 55%;
+    box-sizing: border-box;
+    /* height: 100%; */
+}
+
+.leftSide img{
+    height: inherit;
+    width: 100%;
+}
+
+.rightSide{
+    float: right;
+    box-sizing: border-box;
+    width: 45%;
+    text-align: middle;
+    /* position: absolute; */
+    margin-top: 10%;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.headLanding{
+    /* background-color: red; */
+  
+    /* background-image: linear-gradient(45deg, #ff85ad, #ffb05c); */
+    background-image: linear-gradient(45deg, 
+    #71a3f7, #e1cdfe);
+    /* background-image: linear-gradient(45deg, #f3ec78, #af4261); */
+
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    font-size: 100px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+
+.intro{
+    padding: 20px;
+    padding-bottom: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: aliceblue;
+    /* color: #721bdd; */
+}
+
+.link{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.link1:hover, .link2:hover{
+    /* background-image: linear-gradient(45deg, #ff85ad, #ffb05c);
+    /* background-image: linear-gradient(45deg, #f3ec78, #af4261); 
+
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent; */
+    background-color: #71a3f7; 
+    color:#121212;
+}
+
+.link1{
+    display: block;
+    padding: 15px 50px;
+    color:beige;
+    border: solid 1px #71a3f7;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 25px;
+    width: 25%;
+}
+
+.link2{
+    display: block;
+    padding: 15px 50px;
+    color:beige;
+    border: solid 1px #71a3f7;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 25%;
+}

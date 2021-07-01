@@ -1,4 +1,4 @@
-# Connecture
+# Connecture :snowman:
 
 *This project is based on the concept of making new and meaningful connections. By providing access to all college peers on a single platform, getting to know peers with a similar interest can help to guide and inspire students. We already have many sophisticated social platforms to connect with people, but, a setup at an institute-level would significantly help to bind everyone by leveraging the ability to connect digitally.* :octocat:
 
